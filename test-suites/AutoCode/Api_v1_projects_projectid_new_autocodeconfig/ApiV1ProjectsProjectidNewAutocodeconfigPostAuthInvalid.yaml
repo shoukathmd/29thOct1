@@ -1,0 +1,112 @@
+---
+parent: "Api_v1_projects_projectid_new_autocodeconfig"
+name: "ApiV1ProjectsProjectidNewAutocodeconfigPostAuthInvalid"
+description: null
+authors:
+- "FX Bot"
+type: "SUITE"
+init: []
+path: "/api/v1/projects/{projectId}/new/autocodeconfig"
+endpoint: "/api/v1/projects/{{@Random}}/new/autocodeconfig"
+method: "POST"
+auth: "Invalid_Auth"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\n  \"createdBy\" : \"\",\n  \"createdDate\" : \"\",\n  \"genPolicy\" :\
+    \ \"Create\",\n  \"generators\" : [ {\n    \"abacResources\" : [ {\n      \"createBody\"\
+    \ : \"{{@Random}}\",\n      \"createEndpoint\" : \"{{@Random}}\",\n      \"createUserAuth\"\
+    \ : \"{{@Random}}\",\n      \"createdBy\" : \"\",\n      \"createdDate\" : \"\"\
+    ,\n      \"deleteEndpoint\" : \"{{@Random}}\",\n      \"enumValues\" : \"{{@Random}}\"\
+    ,\n      \"generatorId\" : \"{{@Random}}\",\n      \"id\" : \"\",\n      \"inactive\"\
+    \ : false,\n      \"initScriptName\" : \"{{@Random}}\",\n      \"lock\" : false,\n\
+    \      \"modifiedBy\" : \"\",\n      \"modifiedDate\" : \"\",\n      \"resourceName\"\
+    \ : \"{{@Random}}\",\n      \"scripts\" : [ {\n        \"body\" : \"{{@Random}}\"\
+    ,\n        \"deleteEndPoint\" : \"{{@Random}}\",\n        \"endpoint\" : \"{{@Random}}\"\
+    ,\n        \"resourceName\" : \"{{@Random}}\",\n        \"scriptName\" : \"{{@Random}}\"\
+    ,\n        \"scriptType\" : \"{{@Random}}\",\n        \"sequence\" : \"{{@RandomInteger}}\"\
+    ,\n        \"userAuth\" : \"{{@Random}}\"\n      } ],\n      \"typeThreeCreateEndpoint\"\
+    \ : \"{{@Random}}\",\n      \"validations\" : [ {\n        \"body\" : \"{{@Random}}\"\
+    ,\n        \"endpoint\" : \"{{@Random}}\",\n        \"inactive\" : false,\n  \
+    \      \"lock\" : false,\n        \"path\" : \"{{@Random}}\",\n        \"userAuth\"\
+    \ : \"{{@Random}}\",\n        \"validationType\" : \"{{@Random}}\"\n      } ],\n\
+    \      \"version\" : \"\"\n    } ],\n    \"assertionDescription\" : \"{{@Random}}\"\
+    ,\n    \"assertions\" : [ ],\n    \"assertionsText\" : \"{{@Random}}\",\n    \"\
+    authors\" : \"{{@Random}}\",\n    \"category\" : \"ABAC\",\n    \"coverageMultiplier\"\
+    \ : \"{{@RandomInteger}}\",\n    \"currentScripts\" : \"{{@RandomInteger}}\",\n\
+    \    \"database\" : {\n      \"name\" : \"{{@Random}}\",\n      \"version\" :\
+    \ \"\"\n    },\n    \"displayHeaderDescription\" : \"{{@Random}}\",\n    \"displayHeaderLabel\"\
+    \ : \"{{@Random}}\",\n    \"expectedScripts\" : \"{{@RandomInteger}}\",\n    \"\
+    fixHours\" : \"{{@Random}}\",\n    \"id\" : \"\",\n    \"inactive\" : false,\n\
+    \    \"matches\" : [ {\n      \"allowRoles\" : \"{{@Random}}\",\n      \"bodyProperties\"\
+    \ : \"{{@Random}}\",\n      \"denyRoles\" : \"{{@Random}}\",\n      \"id\" : \"\
+    \",\n      \"methods\" : \"{{@Random}}\",\n      \"name\" : \"{{@Random}}\",\n\
+    \      \"pathPatterns\" : \"{{@Random}}\",\n      \"queryParams\" : \"{{@Random}}\"\
+    ,\n      \"resourceSamples\" : \"{{@Random}}\",\n      \"value\" : \"{{@Random}}\"\
+    \n    } ],\n    \"newlyAdded\" : false,\n    \"project\" : {\n      \"account\"\
+    \ : {\n        \"accountType\" : \"FX_Issues\",\n        \"createdBy\" : \"\"\
+    ,\n        \"createdDate\" : \"\",\n        \"id\" : \"\",\n        \"inactive\"\
+    \ : false,\n        \"modifiedBy\" : \"\",\n        \"modifiedDate\" : \"\",\n\
+    \        \"name\" : \"{{@Random}}\",\n        \"org\" : {\n          \"createdBy\"\
+    \ : \"\",\n          \"createdDate\" : \"\",\n          \"id\" : \"\",\n     \
+    \     \"inactive\" : false,\n          \"modifiedBy\" : \"\",\n          \"modifiedDate\"\
+    \ : \"\",\n          \"name\" : \"{{@Random}}\",\n          \"version\" : \"\"\
+    \n        },\n        \"region\" : \"{{@Random}}\",\n        \"version\" : \"\"\
+    \n      },\n      \"autoGenSuites\" : \"{{@RandomInteger}}\",\n      \"branch\"\
+    \ : \"{{@Random}}\",\n      \"createdBy\" : \"\",\n      \"createdDate\" : \"\"\
+    ,\n      \"description\" : \"{{@Random}}\",\n      \"genPolicy\" : \"Create\"\
+    ,\n      \"id\" : \"\",\n      \"inactive\" : false,\n      \"isFileLoad\" : \"\
+    {{@Random}}\",\n      \"lastCommit\" : \"{{@Random}}\",\n      \"lastSync\" :\
+    \ null,\n      \"licenses\" : [ ],\n      \"modifiedBy\" : \"\",\n      \"modifiedDate\"\
+    \ : \"\",\n      \"name\" : \"{{@Random}}\",\n      \"openAPISpec\" : \"{{@Random}}\"\
+    ,\n      \"openText\" : \"{{@Random}}\",\n      \"org\" : {\n        \"createdBy\"\
+    \ : \"\",\n        \"createdDate\" : \"\",\n        \"id\" : \"\",\n        \"\
+    inactive\" : false,\n        \"modifiedBy\" : \"\",\n        \"modifiedDate\"\
+    \ : \"\",\n        \"name\" : \"{{@Random}}\",\n        \"version\" : \"\"\n \
+    \     },\n      \"props\" : null,\n      \"url\" : \"{{@Random}}\",\n      \"\
+    version\" : \"\"\n    },\n    \"sequenceOrder\" : \"{{@RandomInteger}}\",\n  \
+    \  \"severity\" : \"Major\",\n    \"tags\" : [ ],\n    \"type\" : \"{{@Random}}\"\
+    \n  } ],\n  \"id\" : \"\",\n  \"inactive\" : false,\n  \"modifiedBy\" : \"\",\n\
+    \  \"modifiedDate\" : \"\",\n  \"openAPISpec\" : \"{{@Random}}\",\n  \"project\"\
+    \ : {\n    \"account\" : {\n      \"accountType\" : \"Self_Hosted\",\n      \"\
+    createdBy\" : \"\",\n      \"createdDate\" : \"\",\n      \"id\" : \"\",\n   \
+    \   \"inactive\" : false,\n      \"modifiedBy\" : \"\",\n      \"modifiedDate\"\
+    \ : \"\",\n      \"name\" : \"{{@Random}}\",\n      \"org\" : {\n        \"createdBy\"\
+    \ : \"\",\n        \"createdDate\" : \"\",\n        \"id\" : \"\",\n        \"\
+    inactive\" : false,\n        \"modifiedBy\" : \"\",\n        \"modifiedDate\"\
+    \ : \"\",\n        \"name\" : \"{{@Random}}\",\n        \"version\" : \"\"\n \
+    \     },\n      \"region\" : \"{{@Random}}\",\n      \"version\" : \"\"\n    },\n\
+    \    \"autoGenSuites\" : \"{{@RandomInteger}}\",\n    \"branch\" : \"{{@Random}}\"\
+    ,\n    \"createdBy\" : \"\",\n    \"createdDate\" : \"\",\n    \"description\"\
+    \ : \"{{@Random}}\",\n    \"genPolicy\" : \"None\",\n    \"id\" : \"\",\n    \"\
+    inactive\" : false,\n    \"isFileLoad\" : \"{{@Random}}\",\n    \"lastCommit\"\
+    \ : \"{{@Random}}\",\n    \"lastSync\" : null,\n    \"licenses\" : [ ],\n    \"\
+    modifiedBy\" : \"\",\n    \"modifiedDate\" : \"\",\n    \"name\" : \"{{@Random}}\"\
+    ,\n    \"openAPISpec\" : \"{{@Random}}\",\n    \"openText\" : \"{{@Random}}\"\
+    ,\n    \"org\" : {\n      \"createdBy\" : \"\",\n      \"createdDate\" : \"\"\
+    ,\n      \"id\" : \"\",\n      \"inactive\" : false,\n      \"modifiedBy\" : \"\
+    \",\n      \"modifiedDate\" : \"\",\n      \"name\" : \"{{@Random}}\",\n     \
+    \ \"version\" : \"\"\n    },\n    \"props\" : null,\n    \"url\" : \"{{@Random}}\"\
+    ,\n    \"version\" : \"\"\n  },\n  \"version\" : \"\"\n}"
+  inactive: false
+assertions:
+- "@StatusCode == 401 OR @StatusCode == 403"
+cleanup: []
+severity: "Major"
+category: "InvalidAuth"
+tags:
+- "V1"
+- "OWASP A2"
+- "OWASP A5"
+- "OWASP A6"
+- "OWASP A7"
+- "[PCI DSS 3.0] 6.5.8"
+- "[PCI DSS 3.0] 6.5.10"
+- "OTG-AUTHN-004"
+- "FX Top 10 - API Vulnerability"
+- "Non-Intrusive"
+inactive: false
+policies: null
+autoGenerated: true
